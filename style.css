@@ -1,3 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border{
+    border: 1px solid black;
+}
+main{
+    max-width: 100%;
+    margin-top: 2rem;
+}
+.to-do-main{
+    width: 50%;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 0.3rem;
+}
+
+.input-add{
+    margin-top: 1rem;
+    gap: 3rem;
+}
+
 .textdelete{
     text-decoration: line-through;
+}
+
+.to-do-text{
+    font-family: "Protest Guerrilla";
+    background-color: rgb(63, 231, 149);
+    max-width: 100%;
+    font-size: 3rem;
+    border-radius: 0.2rem;
+    box-shadow: 2px 3px 3px 2px green;
+}
+
+.input{
+    width: 400px;
+    height: 2rem;
+    background-color: rgba(31, 119, 212, 0.3);
+    border: none;
+    border-radius: 0.3rem;
+    padding-left: 2rem;
+    color: white;
+    box-shadow: 2px 3px 3px 2px black;
+    outline-color: yellow;
+
+}
+
+.add{
+    width: 4rem;
+  height: 2rem; 
+  background-color: rgba(150, 26, 207, 80%);
+  color: white;
+  border: none;
+  border-radius: 0.3rem; 
+}
+.list-data{
+    height: 90%;
+    width: 100%;
+}
+.data{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background-color: rgba(58, 237, 103,20%);
+    backdrop-filter: blur(5px);
+    height: 300px;
+    border-radius: 0.3rem;
+    width: 500px;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    overflow-y: scroll;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.data::-webkit-scrollbar{
+    width: 2rem;
+}
+
+.list{
+    
+    height: 3rem;
+    width: 25rem;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: azure;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    
+}
+
+.inputtext{
+    overflow-x: scroll;
+    width: 9rem;
+}
+.inputtext::-webkit-scrollbar{
+    width: 20rem;
+    height: 0.1rem;
+}
+.inputtext::-webkit-scrollbar-thumb{
+    background-color: blue;
+}
+
+.button{
+    height: 2rem;
+    width: 4rem;
+    border-radius: 0.3rem;
+    border: none;
+    color: white;
+    background-color: rgba(121, 57, 170, 0.896);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media only screen and (max-width:712px) {
+    .data{
+        height: 300px;
+        max-width: 80%;
+    }
+    .list-data{
+        height: 90%;
+        width: 100%;
+    }
 }

@@ -8,7 +8,9 @@ addbutton.addEventListener("click",function(){
   let task=input.value;
   input.value="";
   let li=document.createElement("li");
-  li.innerHTML=`<span class=inputtext>${task}</span><button class="del">Delete</button><button class="edit">Edit</button>   <button class="done">Done</button>`
+  li.innerHTML=`<span class=inputtext>${task}</span><div><button class="del button">Delete</button>  <button class="edit button">Edit</button>  <button class="done button">Done</button></div>`
+  li.classList.add("list");
+  li.classList.add("display")
   let del=li.querySelector(".del");
   let edit=li.querySelector(".edit");
   
@@ -36,12 +38,8 @@ addbutton.addEventListener("click",function(){
   done.addEventListener("click",function(){
    inputtext.classList.toggle("textdelete");
   })
-  localStorage.setItem(count,JSON.stringify(li.childNodes[0].textContent));
-  count++;
-  console.log(localStorage.getItem(5))
-  
+  // localStorage.setItem(count,JSON.stringify(li.childNodes[0].textContent));
+  // count++;
   ul.appendChild(li);
-  
 }
 })
-
