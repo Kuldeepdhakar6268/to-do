@@ -8,7 +8,7 @@ addbutton.addEventListener("click",function(){
   let task=input.value;
   input.value="";
   let li=document.createElement("li");
-  li.innerHTML=`<span class=inputtext>${task}</span><div><button class="del button">Delete</button>  <button class="edit button">Edit</button>  <button class="done button">Done</button></div>`
+  li.innerHTML=`<span class=inputtext>${task}</span><div><button class="del button"><i class="ri-delete-bin-line"></i></button>  <button class="edit button"><i class="ri-edit-fill"></i></button>  <button class="done button"><i class="ri-verified-badge-line"></i></button></div>`
   li.classList.add("list");
   li.classList.add("display")
   let del=li.querySelector(".del");
